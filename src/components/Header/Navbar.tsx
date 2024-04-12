@@ -6,7 +6,9 @@ const Navbar: React.FC = () => {
     <div className="flex mx-5 h-[100px] items-center">
       <div>
         <NavLink to="/">
-          <h1 className="bg-black text-3xl text-white p-1 font-logo">IOSPdb</h1>
+          <h1 className="bg-black text-3xl text-white p-1 font-Playfair">
+            IOSPdb
+          </h1>
         </NavLink>
       </div>
       <nav className="ml-auto">
@@ -39,16 +41,6 @@ const Navbar: React.FC = () => {
               }} font-semibold nav-NavLink transition-all duration-300 ease-in-out hover:text-green-500`}
             >
               About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/contact"
-              className={`${(isActive: boolean) => {
-                isActive ? "underline" : "";
-              }} font-semibold nav-NavLink transition-all duration-300 ease-in-out hover:text-green-500`}
-            >
-              Contact Us
             </NavLink>
           </li>
         </ul>

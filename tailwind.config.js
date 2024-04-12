@@ -9,9 +9,11 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    backgroundImage: {
+      'homeBG': "url('@/assets/images/HomeBG.jpeg')",
+    },
     fontFamily: {
-      'logo': ["Playfair Display",  'serif']
-
+      'Playfair': ["Playfair Display",  'serif']
     },
     container: {
       center: true,
