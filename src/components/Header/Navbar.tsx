@@ -35,6 +35,16 @@ const Navbar: React.FC = () => {
           </li>
           <li>
             <NavLink
+              to="/search"
+              className={`${(isActive: boolean) => {
+                isActive ? "underline" : "";
+              }} font-semibold nav-NavLink transition-all duration-300 ease-in-out hover:text-green-500`}
+            >
+              Search
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="/about"
               className={`${(isActive: boolean) => {
                 isActive ? "underline" : "";
