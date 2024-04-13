@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import KeyFeaturesofIOSPdb from "@/components/KeyFeatureofIOSPdb/KeyFeaturesofIOSPdb";
+import Banner from "@/components/Banner/Banner";
+
 const Home = () => {
   return (
     <div className="">
@@ -8,12 +10,11 @@ const Home = () => {
         <p className="mb-3">Discover and contribute to open-source projects</p>
         <Button className="rounded-none">Explore Projects</Button>
       </div>
-      {/* <div className="p-5">
-        <h2 className="font-bold text-2xl">Highlighted Projects</h2>
-        <div></div>
-      </div> */}
       <div>
         <KeyFeaturesofIOSPdb />
+      </div>
+      <div>
+        <Banner />
       </div>
     </div>
   );

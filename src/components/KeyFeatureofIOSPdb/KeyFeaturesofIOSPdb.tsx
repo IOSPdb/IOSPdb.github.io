@@ -22,7 +22,7 @@ const KeyFeaturesofIOSPdb: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="outline sm:w-[500px] h-[150px] p-10">
+        <div className="outline sm:w-[500px] h-[150px] p-10 w-full">
           <div>
             <div className="flex items-center gap-3">
               <TbFilterSearch className="text-xl " />
