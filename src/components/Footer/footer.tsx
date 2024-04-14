@@ -1,21 +1,20 @@
 import React from "react";
+import Faq from "@/components/FAQ/Faq";
+import Copyright from "../Copyright/Copyright";
 
 const Footer: React.FC = () => {
-  const currentYear = new Date().getFullYear();
   return (
     <footer>
       <div>
-        <p
-          className="px-0 bg-gray-950
-          text-center text-primaryText py-5 text-gray-200"
-        >
-          &copy; {currentYear} IOSPdb. All rights reserved. Created by{" "}
-          <a href="https://ganeshdole.me/" className="text-white font-bold ">
-            Ganesh Dole
-          </a>{" "}
-          with ❤️
-        </p>
+        <div>
+          <h1 className="bg-black text-2xl text-white p-1 font-Playfair w-fit">
+            IOSPdb
+          </h1>
+          <p>A platform to discover and contribute to open-source projects</p>
+        </div>
+        <Faq />
       </div>
+      <Copyright />
     </footer>
   );
 };

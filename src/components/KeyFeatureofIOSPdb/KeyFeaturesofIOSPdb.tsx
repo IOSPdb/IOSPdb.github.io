@@ -6,7 +6,7 @@ import { FaUser } from "react-icons/fa";
 
 const KeyFeaturesofIOSPdb: React.FC = () => {
   return (
-    <div className="flex flex-col items-center bg-[#f0dcd9] p-5">
+    <div className="flex flex-col items-center bg-[#f0dcd9] p-10">
       <h1 className="text-2xl font-semibold">Key Features of IOSPdb</h1>
       <div className=" flex  flex-wrap gap-10 mt-14 justify-center">
         <div className="outline sm:w-[500px] h-[150px] p-10">

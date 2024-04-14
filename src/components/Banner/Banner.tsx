@@ -6,7 +6,7 @@ const Banner = () => {
       <h1 className="mb-5 text-2xl text-center">
         Discover, Collaborate, Innovate
       </h1>
-      <Button className="w-fit">Get Started</Button>
+      <Button className="w-fit rounded-none">Get Started</Button>
     </div>
   );
 };
