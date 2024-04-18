@@ -3,8 +3,22 @@ import Faq from "@/components/FAQ/Faq";
 import Copyright from "../Copyright/Copyright";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
+import supabase from "@/config/supabaseClient";
 
 const Footer: React.FC = () => {
+  async function subscribe(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
+    e.preventDefault();
+    const emailEl = document.getElementById("email") as HTMLInputElement;
+    const email = emailEl.value;
+    emailEl.value = "";
+    if (!email) return;
+    const { data, error } = await supabase
+      .from("EmailSubscriber")
+      .insert([{ email }])
+      .select();
+    console.log(data, error);
+  }
+
   return (
     <footer>
       <div className="p-16">
@@ -34,6 +48,7 @@ const Footer: React.FC = () => {
               <div className="flex flex-col gap-4">
                 <Input
                   type="email"
+                  name="email"
                   id="email"
                   placeholder="E-mail"
                   aria-required
@@ -42,6 +57,7 @@ const Footer: React.FC = () => {
                 <Button
                   variant={"outline"}
                   className="w-full md:w-[250px] bg-black text-accent uppercase font-bold tracking-widest"
+                  onClick={(e) => subscribe(e)}
                 >
                   Subscribe
                 </Button>

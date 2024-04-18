@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import KeyFeaturesofIOSPdb from "@/components/KeyFeatureofIOSPdb/KeyFeaturesofIOSPdb";
 import Banner from "@/components/Banner/Banner";
+import PurposeAndBenefits from "@/components/PurposeAndBenefits/PurposeAndBenefits";
 
 const Home = () => {
   return (
@@ -15,6 +16,9 @@ const Home = () => {
       </div>
       <div>
         <Banner />
+      </div>
+      <div>
+        <PurposeAndBenefits />
       </div>
     </div>
   );
